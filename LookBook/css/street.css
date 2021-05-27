@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+   box-sizing: border-box;
+   margin: 0;
+   transition: .5s ease-in-out;
+}
+.wrapper {
+    height: 100vh;
+}
+
+#navbar {
+    width: 100%;
+    padding: 35px 40px;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 50%);
+    top: 0;
+    opacity: 5;
+    background-size: cover;
+    color: whitesmoke;
+  }
+div.logo {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    width: 50%;
+    margin-top: -35px;
+    margin-left: 90px;
+}
+div h1.logo {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    display: none;
+}
+
+nav ul {
+  display: flex;
+  grid-gap: 32px;
+  align-items: center;
+}
+
+nav ul li {
+  color: black;
+  list-style: none;
+  font-size: 1.1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-family: Alike;
+    transition: all 0.5s ease;
+}
+nav ul li a:hover {
+    transform: scale(1.1);
+    color:  rgba(159,155,67,1);
+}
+
+nav ul li:not(:first-child):hover {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  transform: scale(1.05);
+}
+
+nav ul li:first-child {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.hamburger {
+    display: none;
+}
+  
+.bar {
+    display: block;
+    top: -10px;
+    width: 25px;
+    height: 4px;
+    margin: 5px auto;
+    margin-left: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+@media screen and (max-width: 600px) {
+  
+    nav ul li {
+      color: hsl(0, 0%, 27%);
+      font-weight: 600;
+    }
+  
+    .none {
+      display: none;
+    }
+  
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+  
+    .nav-menu.active {
+      left: 0;
+      justify-content: center;
+    }
+  
+    .nav-item {
+      margin: 2.5rem 0;
+    }
+    div.logo {
+        display: block;
+    }
+    
+    div h1.logo {
+        display: block;
+    }
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      background-color: hsl(0, 0%, 27%);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: hsl(0, 0%, 27%);
+    }
+  }
+
+
+.page-title {
+    width: 100%;
+    background-image: url("../images/chris-barbalis-6LyRK3_H42g-unsplash%201.png");
+    height: 154px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    z-index: -1;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px #000;
+}
+
+.main {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    grid-gap: 40px;
+}
+
+.col {
+    width: 40%;
+    grid-gap: 20px;
+    /* height: 100vh; */
+}
+
+.col:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.col:last-child {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+}
+
+.col-1 {
+    border: 1px solid black;
+    max-width: 770px;
+    /* width: 600px; */
+    padding-bottom: 10px;
+}
+
+.col-img-1 {
+    background-image: url('../images/v20_42.png'); 
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.col-img-2 {
+    background-image: url('../images/v20_52.png'); 
+    height: 550px;
+    background-position: center -100px;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.col-img-3 {
+    background-image: url("../images/v20_65.png"); 
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.col-img-4 {
+    background-image: url("../images/v20_45.png");
+    height: 670px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.col-img-5 {
+    background-image: url("../images/v20_62.png");
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.col-img-6 {
+    background-image: url("../images/v20_70.png");
+    height: 526px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.col-1 img{
+    width: 100%;
+    height: auto;
+}
+
+.col-1 p {
+    font-size: 22px;
+    color: #000;
+    padding-left: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.col-1 p:hover {
+    transform: scale(1.03);
+    text-decoration: underline;
+}
+
+
+footer {
+    color: white;
+    height: 220px;
+    width: 100%;
+    background-color: rgba(51,51,51,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    grid-gap: 20px;
+
+}
+
+footer > div {
+    width: 35%;
+    line-height: 25px;
+}
+
+.right-info ul {
+    margin-top: 20px;
+}
+
+.right-info ul li {
+    list-style: none;
+    line-height: 10px;
+}
+
+.right-info ul {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 40px;
+}
+
+.right-info ul li  i {
+    font-size: 1.5em;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .col {
+        width: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        min-height: 500px;
+        text-align: center;
+    }
+
+    footer > div {
+        width: 50%;
+    }
+
+    .right-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

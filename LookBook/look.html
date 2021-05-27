@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOK</title>
+    <link rel="stylesheet" href="css/look.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="navbar">
+            <nav>
+              <ul class="nav_menu">
+                <li class="nav-item none"><a href="index.html">LOOKBOOK</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="street.html">Street Style</a></li>
+                <li class="nav-item"><a href="look.html">Look</a></li>
+                <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+              </ul>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+            <div class="logo">
+                    <h1 class="logo">LOOKBOOK</h1>
+                </div>
+          </header>
+          <div class="page_title">
+            <div class="centered">Unfussy Tailoring Was the Big Trend at Shanghai Fashion Week</div>
+          </div>
+          <main>
+              <div class="look_gallery">
+                  <div class="main_look"></div>
+                  <div class="look_3">
+                      <div class="look_col look_1_col"></div>
+                      <div class="look_col look_2_col"></div>
+                      <div class="look_col look_3_col"></div>
+                  </div>
+              </div>
+          </main>
+          <div class="subscription_info">
+              <div class="sub_col">
+                <h1>LOOKBOOK</h1>
+                 <a href="subscribe.html" class="button">SUBSCRIBE NOW</a>
+              </div>
+              <div class="sub_col">
+                  <p>Get 1 year of LOOKBOOK plus an exclusive gift</p>
+              </div>
+              <div class="sub_col sub_img">
+
+              </div>
+          </div>
+          <footer>
+            <div class="left_info">
+                <span class="title">LOOKBOOK</span><br> 
+                <span>Inspired by Olena Khomuliak <br> gjolena.khomuliak@ukr.net</span>
+            </div>
+            <div class="right_info">
+                <span>The latest fashion news, beauty coverage, celebrity style, fashion week updates, culture reviews, and videos on LOOKBOOK.</span>
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-pinterest-p"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </div>
+          </footer>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav_menu");
+  
+        hamburger.addEventListener("click", mobileMenu);
+  
+        function mobileMenu() {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        }
+      </script>
+</body>
+</html>

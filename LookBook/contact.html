@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOK</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="navbar">
+            <nav>
+              <ul class="nav_menu">
+                <li class="nav-item none"><a href="index.html">LOOKBOOK</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="street.html">Street Style</a></li>
+                <li class="nav-item"><a href="look.html">Look</a></li>
+                <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+              </ul>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+            <div class="logo">
+                    <h1 class="logo">LOOKBOOK</h1>
+                </div>
+          </header>
+          <main> 
+        <div class="video-cont"> 
+              <video autoplay muted loop id="myvideo">
+            <source src="video.mp4" type=""video/mp4>
+            </video>
+              </div>
+        <div class="overlay">
+            <p>Please write us at <a>lookbook@advancemags.com</a> with any questions, concerns, or technical problems.</p>
+              </div> 
+              <div style="position:relative;">
+<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+<p style="justify-content: center;text-align: center;font-size: 1.5em;font-weight: 600;">Fill this form, if you have any questions or comments to us</p>
+</div>
+</div>
+              <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+
+<div class="container">
+  <form action="/" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="ukraine">Ukraine</option>
+          <option value="france">France</option>
+          <option value="england">England</option>
+          <option value="spain">Spain</option>  
+          <option value="poland">Poland</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+              </div>
+             
+        </main>
+          <footer>
+            <div class="left_info">
+                <span class="title">LOOKBOOK</span><br> 
+                <span>Inspired by Olena Khomuliak <br> gjolena.khomuliak@ukr.net</span>
+            </div>
+            <div class="right_info">
+                <span>The latest fashion news, beauty coverage, celebrity style, fashion week updates, culture reviews, and videos on LOOKBOOK.</span>
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-pinterest-p"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </div>
+          </footer>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav_menu");
+  
+        hamburger.addEventListener("click", mobileMenu);
+  
+        function mobileMenu() {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOK</title>
+    <link rel="stylesheet" href="css/subscribe.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="navbar">
+            <nav>
+              <ul class="nav_menu">
+                <li class="nav-item none"><a href="index.html">LOOKBOOK</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="street.html">Street Style</a></li>
+                <li class="nav-item"><a href="look.html">Look</a></li>
+                <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+              </ul>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+            <div class="logo">
+                    <h1 class="logo">LOOKBOOK</h1>
+                </div>
+          </header>
+          <div class="container">
+        <div class="silver">
+            <h1>Silver Plan</h1>
+            <h2>Basic No-Frills Package</h2>
+            <div class="price">$10/year</div>
+            <p>Number of Magazine</p>
+            <span>6</span>
+            <p>Print Edition</p>
+            <span>3</span>
+            <p>Forums</p>
+            <span>Discussion Only</span>
+            <button>Select Subscribe</button>
+        </div>
+        <div class="gold">
+            <h1>Gold Plan</h1>
+            <h2>The Standard Package</h2>
+            <div class="price">$25/year</div>
+            <p>Number of Magazine</p>
+            <span>10</span>
+            <p>Print Edition</p>
+            <span>6</span>
+            <p>Forums</p>
+            <span>Discussion Only</span>
+            <button>Select Subscribe</button>
+        </div>
+        <div class="plat">
+            <h1>Platinum Plan</h1>
+            <h2>Elite! Enough Said!</h2>
+            <div class="price">$45/year</div>
+            <p>Number of Magazine</p>
+            <span>Each issue</span>
+            <p>Print Edition</p>
+            <span>Each issue</span>
+            <p>Forums</p>
+            <span>ALL</span>
+            <button>Select Subscribe</button>
+        </div>
+    </div>
+          <footer>
+            <div class="left_info">
+                <span class="title">LOOKBOOK</span><br> 
+                <span>Inspired by Olena Khomuliak <br> gjolena.khomuliak@ukr.net</span>
+            </div>
+            <div class="right_info">
+                <span>The latest fashion news, beauty coverage, celebrity style, fashion week updates, culture reviews, and videos on LOOKBOOK.</span>
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-pinterest-p"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </div>
+          </footer>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav_menu");
+  
+        hamburger.addEventListener("click", mobileMenu);
+  
+        function mobileMenu() {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        }
+      </script>
+</body>
+</html>

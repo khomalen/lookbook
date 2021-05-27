@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+   box-sizing: border-box;
+   margin: 0;
+   transition: .5s ease-in-out;
+}
+.wrapper {
+    height: 100hv;
+}
+#navbar {
+    width: 100%;
+    height: 102px;
+    padding: 35px 40px;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 50%);
+    background-color: whitesmoke;
+    background-size: cover;
+    top: 0;
+  }
+
+div.logo {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    width: 50%;
+    margin-top: -35px;
+    margin-left: 90px;
+}
+div h1.logo {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    display: none;
+}
+nav ul {
+  display: flex;
+  grid-gap: 32px;
+  align-items: center;
+}
+
+nav ul li{
+  color: black;
+  list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-family: Alike;
+    transition: all 0.5s ease;
+}
+nav ul li a:hover {
+    transform: scale(1.1);
+    color:  rgba(159,155,67,1);
+
+}
+
+nav ul li:not(:first-child):hover {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  transform: scale(1.05);
+}
+
+nav ul li:first-child {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.hamburger {
+    display: none;
+}
+  
+.bar {
+    display: block;
+    top: -10px;
+    width: 25px;
+    height: 4px;
+    margin: 5px auto;
+    margin-left: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+
+@media screen and (max-width: 600px) {
+  
+    nav ul li {
+      color: hsl(0, 0%, 27%);
+      font-weight: 600;
+    }
+  
+    .none {
+      display: none;
+    }
+  
+    .nav_menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+  
+    .nav_menu.active {
+      left: 0;
+      justify-content: center;
+    }
+  
+    .nav_item {
+      margin: 2.5rem 0;
+    }
+    div.logo {
+        display: block;
+    }
+    
+    div h1.logo {
+        display: block;
+    }
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      background-color: hsl(0, 0%, 27%);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: hsl(0, 0%, 27%);
+    }
+    
+
+  }
+
+  footer {
+    color: white;
+    height: 220px;
+    width: 100%;
+    background-color: rgba(51,51,51,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    grid-gap: 20px;
+
+}
+
+footer > div {
+    width: 35%;
+    line-height: 25px;
+}
+
+.right_info ul {
+    margin-top: 20px;
+}
+
+.right_info ul li {
+    list-style: none;
+    line-height: 10px;
+}
+
+.right_info ul {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 40px;
+}
+
+.right_info ul li  i {
+    font-size: 1.5em;
+}
+@media screen and (max-width: 1000px) {
+
+    footer {
+        flex-direction: column;
+        min-height: 500px;
+        text-align: center;
+    }
+
+    footer > div {
+        width: 50%;
+    }
+
+    .right_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+}
+.container {
+            max-width: 750px;
+            margin: 100px auto;
+        }
+        
+        .silver,
+        .plat {
+            float: left;
+            width: 250px;
+            background: rgb(76 61 6 / 33%);
+            text-align: center;
+            box-shadow: 1px 1px 1px rgb(0 0 0 / 60%);
+            border-radius: 10px;
+        }
+        
+        .gold {
+            float: left;
+            position: relative;
+            width: 250px;
+            top: -50px;
+            padding: 50px 0;
+            background: rgb(159 155 67 / 33%);
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px rgb(0 0 0 / 60%);
+        }
+        
+        .gold > .price {
+            background: white;
+            color: black;
+        }
+        
+        .gold > h1,
+        .gold > h2,
+        .gold > p,
+        .gold > span {
+            color: white;
+        }
+        
+        h1 {
+            margin: 20px 0 10px 0;
+            font-size: 1.25em;
+            color: black;
+        }
+        
+        h2 {
+            font-size: .75em;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+        
+        div.container p {
+            color: rgba(0, 0, 0, 0.4);
+            margin: 10px 0;
+            font-weight: 100;
+            font-size: .75em;
+        }
+        
+        div.container span {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            display: inline-block;
+            width: 125px;
+            font-size: 1em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .price {
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            background-color: hsl(0deg 1% 9%);
+            border-radius: 50%;
+            line-height: 100px;
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: 100;
+            margin: 20px auto;
+        }
+        
+       div.container button {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 35px;
+            border-bottom: 5px solid #c0392b;
+            background: hsl(0deg 1% 9%);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: .75em;
+            font-weight: 100;
+            transition: all ease-in-out .2s;
+        }
+        
+       div.container button:hover {
+            background: #c0392b;
+        }
